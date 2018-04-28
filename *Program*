@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+	char p[10][5];
+    char count[5];
+	int a,b,pt[10],wt[10],totwt=0,pr[10],temp1,n;
+	float avgwt;
+	printf("enter the number of processes:");
+	scanf("%d",&n);
+	for(a=0;a<n;a++)
+	{
+		printf("enter the process %d name:",a+1);
+  		scanf("%s",&p[a]);
+		printf("enter the process time:");
+		scanf("%d",&pt[a]);
+		printf("enter the priority:");
+		scanf("%d",&pr[a]);
+	}
+	}
+	avgwt=(float)totwt/n;
+	printf("p_name\t p_time\t priority\t w_time\n");
+	for(a=0;a<n;a++)
+	{
+	   printf(" %s\t %d\t %d\t %d\n" ,p[a],pt[a],pr[a],wt[a]);
+	}
+	printf("total waiting time=%d\n avg waiting time=%f",totwt,avgwt);
+	
+	int ts,pid[10],need[10],wt1[10],tat[10],a1,b1,n2,n1;
+	int bt[10],flag[10],ttat=0,twt=0;
+	float awt,atat;
+	printf("\nEnter the number of Processors \n");
+	scanf("%d",&n);
+	n1=n;
